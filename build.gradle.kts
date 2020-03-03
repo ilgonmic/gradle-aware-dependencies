@@ -22,7 +22,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("com.example:sample-lib:1.0")
+                implementation(project("sample-lib-gradle-kotlin-dsl"))
             }
         }
         nodeJs.compilations["main"].defaultSourceSet {
@@ -32,13 +32,3 @@ kotlin {
         }
     }
 }
-
-//configurations {
-//    all {
-//        if (name.toLowerCase().endsWith("default") ||name.toLowerCase().endsWith("compile") || name.toLowerCase().endsWith("compileOnly")|| name.toLowerCase().endsWith("runtime")|| name.toLowerCase().endsWith("runtimeOnly")|| name.toLowerCase().endsWith("implementation")|| name.toLowerCase().endsWith("api")) {
-//            println(this)
-//            println(isCanBeConsumed)
-//            isCanBeConsumed = false
-//        }
-//    }
-//}

@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.multiplatform").version("1.4-SNAPSHOT")
+    id("org.jetbrains.kotlin.multiplatform")
     id("maven-publish")
 }
 
