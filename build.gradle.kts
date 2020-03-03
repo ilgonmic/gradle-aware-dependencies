@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.multiplatform").version("1.4-SNAPSHOT")
+    id("org.jetbrains.kotlin.multiplatform").version("1.4.0-dev-3635")
     id("maven-publish")
 }
 
@@ -8,12 +8,13 @@ version = "1.0"
 
 repositories {
     maven {
+        setUrl("https://dl.bintray.com/kotlin/kotlin-dev")
+    }
+    maven {
         setUrl("file://" + projectDir.resolve("sample-lib-gradle-kotlin-dsl").resolve("repo").canonicalPath)
     }
     mavenLocal()
-    maven {
-        setUrl("https://dl.bintray.com/kotlin/kotlin-dev")
-    }
+
     jcenter()
 }
 
