@@ -11,6 +11,9 @@ repositories {
         setUrl("file://" + projectDir.resolve("sample-lib-gradle-kotlin-dsl").resolve("repo").canonicalPath)
     }
     mavenLocal()
+    maven {
+        setUrl("https://dl.bintray.com/kotlin/kotlin-dev")
+    }
     jcenter()
 }
 

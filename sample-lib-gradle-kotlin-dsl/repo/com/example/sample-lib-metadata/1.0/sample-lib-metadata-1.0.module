@@ -1,0 +1,47 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../sample-lib-nodejs/1.0/sample-lib-nodejs-1.0.module",
+    "group": "com.example",
+    "module": "sample-lib-nodejs",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.2",
+      "buildId": "cl5mr5atjrfkpjp44phfe6nieq"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4-M1-eap-61"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sample-lib-metadata-1.0.jar",
+          "url": "sample-lib-metadata-1.0.jar",
+          "size": 1039,
+          "sha512": "008127e3e0af06a88da1886f3e4b6d31c8581bdcc063368b662afcb6a440d639d7f9be3e199096837eef841302c9c32eb78cbb447d70044f2fca561388775b31",
+          "sha256": "d217709b3d9a7260cfcfb480fb3b981d29c547e148b0553a0a2de08b901633de",
+          "sha1": "85875e8e7eac5a02d2e2d63ab7d6eb86521e0b3d",
+          "md5": "cb8dcbe8939dea43806c4ebd56bb334e"
+        }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,9 @@ version = "1.0"
 repositories {
     mavenLocal()
     jcenter()
+    maven {
+        setUrl("https://dl.bintray.com/kotlin/kotlin-dev")
+    }
 }
 
 kotlin {
@@ -39,14 +42,5 @@ kotlin {
 publishing {
     repositories {
         maven { setUrl("file://${projectDir.absolutePath.replace('\\', '/')}/repo") }
-    }
-}
-
-configurations {
-    all {
-        if (name.toLowerCase().endsWith("default") ||name.toLowerCase().endsWith("compile") || name.toLowerCase().endsWith("compileOnly")|| name.toLowerCase().endsWith("runtime")|| name.toLowerCase().endsWith("runtimeOnly")) {
-            println(this)
-            isCanBeConsumed = false
-        }
     }
 }

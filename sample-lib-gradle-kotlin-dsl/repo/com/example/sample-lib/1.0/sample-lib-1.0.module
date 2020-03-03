@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "sample-lib",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.2",
+      "buildId": "cl5mr5atjrfkpjp44phfe6nieq"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../sample-lib-metadata/1.0/sample-lib-metadata-1.0.module",
+        "group": "com.example",
+        "module": "sample-lib-metadata",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "nodeJs-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../sample-lib-nodejs/1.0/sample-lib-nodejs-1.0.module",
+        "group": "com.example",
+        "module": "sample-lib-nodejs",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "nodeJs-runtime",
+      "attributes": {
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../sample-lib-nodejs/1.0/sample-lib-nodejs-1.0.module",
+        "group": "com.example",
+        "module": "sample-lib-nodejs",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "nodeJsIr-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../sample-lib-nodejs/1.0/sample-lib-nodejs-1.0.module",
+        "group": "com.example",
+        "module": "sample-lib-nodejs",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "nodeJsIr-runtime",
+      "attributes": {
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../sample-lib-nodejs/1.0/sample-lib-nodejs-1.0.module",
+        "group": "com.example",
+        "module": "sample-lib-nodejs",
+        "version": "1.0"
+      }
+    }
+  ]
+}
