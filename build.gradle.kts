@@ -23,7 +23,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project("sample-lib-gradle-kotlin-dsl"))
+                implementation("com.example:sample-lib:1.0")
             }
         }
         nodeJs.compilations["main"].defaultSourceSet {

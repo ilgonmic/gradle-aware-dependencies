@@ -12,15 +12,14 @@
   "createdBy": {
     "gradle": {
       "version": "6.2",
-      "buildId": "cl5mr5atjrfkpjp44phfe6nieq"
+      "buildId": "zm44uqhl3ve5rk7er23d2uca5e"
     }
   },
   "variants": [
     {
-      "name": "nodeJs-api",
+      "name": "nodeJsLegacy-api",
       "attributes": {
         "org.gradle.usage": "kotlin-api",
-        "org.jetbrains.kotlin.js.compiler": "legacy",
         "org.jetbrains.kotlin.platform.type": "js"
       },
       "dependencies": [
@@ -28,34 +27,33 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-js",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         },
         {
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-common",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         }
       ],
       "files": [
         {
-          "name": "sample-lib-legacynodejs-1.0.jar",
+          "name": "sample-lib-nodejslegacy-1.0.jar",
           "url": "sample-lib-nodejs-1.0.jar",
           "size": 2668,
-          "sha512": "c7d078f9157a429f8319bd6177be136d38b7c46cb2f5063c48659a63c14eea513ddc1edea309b1ab1c4cafcdf23faddeeadde922f7cf85cf5d4f7abf26ef019c",
-          "sha256": "098e862c7220b1f83fcc45cc01031109e9169810b7410b47d3485a4ca635d405",
-          "sha1": "754a696c6a0c16146e988e7478bb38e1dc554a02",
-          "md5": "72f041fb7eb5953481c7c8154ce7fd72"
+          "sha512": "eae59179d72ee3b1793c8646c1adb1540738c02b32c2a1f429fcc104785b0ec400c6512258c358ddce0e0213d1a96543eafac0a123a9d6f232f098794fa2699b",
+          "sha256": "3458b7657345ddbb7ed7ec61a4aa460a3c0c40da0c7ee1b89476ced1718a71b1",
+          "sha1": "cb4ac43305b342dee1c5c701c82f84e1aad83524",
+          "md5": "15cadc966cb1002abcdf0c6a87bec2db"
         }
       ]
     },
     {
-      "name": "nodeJs-runtime",
+      "name": "nodeJsLegacy-runtime",
       "attributes": {
         "org.gradle.usage": "kotlin-runtime",
-        "org.jetbrains.kotlin.js.compiler": "legacy",
         "org.jetbrains.kotlin.platform.type": "js"
       },
       "dependencies": [
@@ -63,26 +61,26 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-js",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         },
         {
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-common",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         }
       ],
       "files": [
         {
-          "name": "sample-lib-legacynodejs-1.0.jar",
+          "name": "sample-lib-nodejslegacy-1.0.jar",
           "url": "sample-lib-nodejs-1.0.jar",
           "size": 2668,
-          "sha512": "c7d078f9157a429f8319bd6177be136d38b7c46cb2f5063c48659a63c14eea513ddc1edea309b1ab1c4cafcdf23faddeeadde922f7cf85cf5d4f7abf26ef019c",
-          "sha256": "098e862c7220b1f83fcc45cc01031109e9169810b7410b47d3485a4ca635d405",
-          "sha1": "754a696c6a0c16146e988e7478bb38e1dc554a02",
-          "md5": "72f041fb7eb5953481c7c8154ce7fd72"
+          "sha512": "eae59179d72ee3b1793c8646c1adb1540738c02b32c2a1f429fcc104785b0ec400c6512258c358ddce0e0213d1a96543eafac0a123a9d6f232f098794fa2699b",
+          "sha256": "3458b7657345ddbb7ed7ec61a4aa460a3c0c40da0c7ee1b89476ced1718a71b1",
+          "sha1": "cb4ac43305b342dee1c5c701c82f84e1aad83524",
+          "md5": "15cadc966cb1002abcdf0c6a87bec2db"
         }
       ]
     },
@@ -98,14 +96,14 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-js",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         },
         {
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-common",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         }
       ],
@@ -114,10 +112,10 @@
           "name": "sample-lib-nodejsir-1.0.klib",
           "url": "sample-lib-nodejs-1.0.klib",
           "size": 3640,
-          "sha512": "6d2d13bf4f819e98f96fc5e9e5a84c58d198e52d7160774f7d6b96c353d7e4f143bef1c4afde709f9fa5ea8bfc65131e6e4477930a81c7fafbb8f3f9a15910a6",
-          "sha256": "3c243d6d28e525addca9bd4944ac0fd3fd7ce9736594a030ecf4917f70b41ba9",
-          "sha1": "8627bbefe503482d86e8d8d452387a1d42b19c6c",
-          "md5": "d1c30c877109c343ac310084c12af488"
+          "sha512": "7ba950533700c1b406aeb3e22cbd09ce305186b58efb87037d6505cbc12ddae3e7ec97d5fcf0ca2b89774b2c0970642a652d2e16565677753a55a92539f0fd35",
+          "sha256": "f18ea24f6087a0d23b599bd80823a85656546dccb96f8cc26d8549c2c1a5ad34",
+          "sha1": "dcc4fd95a97d772520cc9d9edb735e980057f733",
+          "md5": "57e45a66682b7ec8aa78641da2836130"
         }
       ]
     },
@@ -133,14 +131,14 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-js",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         },
         {
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib-common",
           "version": {
-            "requires": "1.4-M1-eap-61"
+            "requires": "1.4.0-dev-3635"
           }
         }
       ],
@@ -149,10 +147,10 @@
           "name": "sample-lib-nodejsir-1.0.klib",
           "url": "sample-lib-nodejs-1.0.klib",
           "size": 3640,
-          "sha512": "6d2d13bf4f819e98f96fc5e9e5a84c58d198e52d7160774f7d6b96c353d7e4f143bef1c4afde709f9fa5ea8bfc65131e6e4477930a81c7fafbb8f3f9a15910a6",
-          "sha256": "3c243d6d28e525addca9bd4944ac0fd3fd7ce9736594a030ecf4917f70b41ba9",
-          "sha1": "8627bbefe503482d86e8d8d452387a1d42b19c6c",
-          "md5": "d1c30c877109c343ac310084c12af488"
+          "sha512": "7ba950533700c1b406aeb3e22cbd09ce305186b58efb87037d6505cbc12ddae3e7ec97d5fcf0ca2b89774b2c0970642a652d2e16565677753a55a92539f0fd35",
+          "sha256": "f18ea24f6087a0d23b599bd80823a85656546dccb96f8cc26d8549c2c1a5ad34",
+          "sha1": "dcc4fd95a97d772520cc9d9edb735e980057f733",
+          "md5": "57e45a66682b7ec8aa78641da2836130"
         }
       ]
     },

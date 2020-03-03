@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.2",
-      "buildId": "cl5mr5atjrfkpjp44phfe6nieq"
+      "buildId": "zm44uqhl3ve5rk7er23d2uca5e"
     }
   },
   "variants": [
@@ -29,10 +29,9 @@
       }
     },
     {
-      "name": "nodeJs-api",
+      "name": "nodeJsLegacy-api",
       "attributes": {
         "org.gradle.usage": "kotlin-api",
-        "org.jetbrains.kotlin.js.compiler": "legacy",
         "org.jetbrains.kotlin.platform.type": "js"
       },
       "available-at": {
@@ -43,10 +42,9 @@
       }
     },
     {
-      "name": "nodeJs-runtime",
+      "name": "nodeJsLegacy-runtime",
       "attributes": {
         "org.gradle.usage": "kotlin-runtime",
-        "org.jetbrains.kotlin.js.compiler": "legacy",
         "org.jetbrains.kotlin.platform.type": "js"
       },
       "available-at": {
