@@ -1,0 +1,9 @@
+sample-lib-gradle-kotlin-dsl/repo
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
