@@ -1,21 +1,13 @@
 plugins {
-    id("org.jetbrains.kotlin.multiplatform").version("1.4.0-dev-3635")
-    id("maven-publish")
+    id("org.jetbrains.kotlin.multiplatform") version "1.4.0-dev-7825"
 }
 
 group = "com.example"
 version = "1.0"
 
 repositories {
-    maven {
-        setUrl("https://dl.bintray.com/kotlin/kotlin-dev")
-    }
-    maven {
-        setUrl("file://" + projectDir.resolve("sample-lib-gradle-kotlin-dsl").resolve("repo").canonicalPath)
-    }
-    mavenLocal()
-
     jcenter()
+    maven("https://dl.bintray.com/kotlin/kotlin-dev")
 }
 
 kotlin {
@@ -23,7 +15,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("com.example:sample-lib:1.0")
+                implementation(project(":sample-lib-gradle-kotlin-dsl"))
             }
         }
         nodeJs.compilations["main"].defaultSourceSet {
